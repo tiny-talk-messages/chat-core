@@ -4,17 +4,13 @@ namespace Vesh95\ChatCore\Group;
 
 use Traversable;
 
-interface Collection extends \Countable, \IteratorAggregate, \ArrayAccess
+/**
+ *
+ */
+interface Collection extends \Vesh95\ChatCore\Common\Collection
 {
     /**
      * @return Traversable<Id, Entity>
      */
     public function getIterator(): Traversable;
-
-    /**
-     * Join collections
-     * @param Collection $other
-     * @return Collection joined collection
-     */
-    public function join(self $other): Collection;
 }
