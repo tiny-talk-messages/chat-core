@@ -1,0 +1,33 @@
+{
+    "name": "tiny-talk-messages/chat-core",
+    "description": "Messenger common interfaces",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Vesh95\\ChatCore\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "test\\": "test/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Eduard Larionov",
+            "email": "eduard@vesh95.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8.2"
+    },
+    "version": "0.0.1",
+    "require-dev": {
+        "phpunit/phpunit": "^12.1@dev"
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit --bootstrap vendor/autoload.php --testdox test"
+    }
+}
