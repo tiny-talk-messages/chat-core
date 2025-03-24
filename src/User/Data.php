@@ -2,12 +2,21 @@
 
 namespace Vesh95\ChatCore\User;
 
+/**
+ * User data class
+ */
 readonly class Data
 {
-    public function __construct(public Id $id, public string $username)
+    /**
+     * @param string $username
+     */
+    public function __construct(public string $username)
     {
     }
 
+    /**
+     * @return string
+     */
     public function __toString(): string
     {
         return $this->username;
